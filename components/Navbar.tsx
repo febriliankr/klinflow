@@ -21,7 +21,7 @@ export default function Navbar({}: Props): ReactElement {
 
   function isNight() {
     const time: Date = new Date();
-    if (time.getHours() > 18) {
+    if (time.getHours() > 18 || time.getHours() < 6 ) {
       return true;
     } else return false;
   }
@@ -61,6 +61,7 @@ export default function Navbar({}: Props): ReactElement {
         <li className="toggle__darkmode">
           <Toggle
             className="DarkToggle"
+            defaultChecked={isDark}
             checked={isDark}
             onChange={(event) => setIsDark(event.target.checked)}
             icons={{ checked: "🌙", unchecked: "🔆" }}
