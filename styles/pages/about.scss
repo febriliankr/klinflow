@@ -1,0 +1,42 @@
+.about__container {
+  padding: 30px 85px 30px 85px;
+
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 0;
+
+  max-width: 800px;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 40px 0 10px;
+  }
+
+  p {
+    line-height: 27px;
+    font-size: 18px;
+    ul {
+      margin-top: 10px;
+      margin-left: 24px;
+      list-style: none;
+      li::before {
+        content: "\203A";
+        font-size: 23px;
+        color: $pink;
+        font-weight: 800;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

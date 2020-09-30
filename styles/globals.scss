@@ -1,0 +1,50 @@
+$light: #fdfdfd;
+$dark: #1a364e;
+$pink: rgb(255, 117, 140);
+$paragraph: #455370;
+$paragraph-darkmode: #aacfe2;
+@import "./components/react-toggle.scss";
+@import "./components/navbar.scss";
+@import "./svg//svg.scss";
+@import "./components/button.scss";
+@import "./pages/home.scss";
+@import "./pages/about.scss";
+@import "./components/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  color: $dark;
+  background-color: $light;
+  p {
+    color: $paragraph;
+  }
+}
+
+html.dark {
+  color: $light;
+  background-color: $dark;
+  a {
+    color: rgb(213, 234, 255);
+    text-decoration: none;
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  p {
+    color: $paragraph-darkmode;
+  }
+}
+
+a {
+  color: rgb(0, 62, 124);
+  text-decoration: none;
+  &:hover {
+    color: rgb(255, 97, 163);
+  }
+}
