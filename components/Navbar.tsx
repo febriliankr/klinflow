@@ -62,7 +62,6 @@ export default function Navbar({}: Props): ReactElement {
           <Toggle
             className="DarkToggle"
             defaultChecked={isDark}
-            checked={isDark}
             onChange={(event) => setIsDark(event.target.checked)}
             icons={{ checked: "🌙", unchecked: "🔆" }}
             aria-label="Dark mode"
