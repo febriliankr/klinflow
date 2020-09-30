@@ -35,13 +35,17 @@ export default function FaQ() {
         <img src="diagramvbvt.jpg" alt="bvt" />
 
         <h2 className="question-heading">
-          Apa itu Variabel Bebas dan Variabel Terikat? 🔗
+          Apa perbedaan Variabel Kategorik dan Variabel Numerik? 🔢
         </h2>
         <p>
-          Variabel bebas (independent variable) merupakan variabel yang dapat
-          kamu sesuaikan untuk mendapatkan hasil tertentu. Variabel ini
-          merupakan input dalam penelitian yang akan memengaruhi hasil
-          penelitian.
+          Berdasarkan jenis datanya, variabel terdiri atas variabel kategorik
+          dan numerik. Variabel kategorik merupakan variabel yang berisi
+          kategori, bisa berupa ranking (ordinal) maupun setara (nominal).
+          Variabel numerik merupakan variabel yang berisikan bilangan hitung.
+        </p>
+        <p>
+          Hati-hati dalam membedakan variabel kategorik ordinal dengan variabel
+          numerik! Beberapa orang keliru dalam membedakannya.
         </p>
 
         <h2 className="question-heading">
