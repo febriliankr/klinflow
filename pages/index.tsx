@@ -20,7 +20,7 @@ export default function Home() {
           <Link href="uji-hipotesis">
             <a className="button">Uji Hipotesis</a>
           </Link>
-          <Link href="/hitung-besar-sampel">
+          <Link href="/besar-sampel">
             <a className="button">Besar Sampel</a>
           </Link>
         </div>

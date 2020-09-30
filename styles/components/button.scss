@@ -17,3 +17,21 @@ a.button {
     
   }
 }
+
+a.button-small {
+  margin: 50px 0 20px;
+  cursor: pointer;
+
+  font-weight: 700;
+  border-radius: 200px;
+  padding: 14px 34px;
+  color: white !important;
+  background-color: #0069ff;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $light !important;
+    background-color: $pink;
+    
+  }
+}

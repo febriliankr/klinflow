@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react";
 import Link from "next/link";
-
 import { useEffect, useState } from "react";
 import Toggle from "react-toggle";
 import { useMediaQuery } from "react-responsive";
@@ -10,18 +9,26 @@ const DARK_CLASS: string = "dark";
 interface Props {}
 
 export default function Navbar({}: Props): ReactElement {
-  const systemPrefersDark: boolean = useMediaQuery(
-    {
-      query: "(prefers-color-scheme: dark)",
-    },
-    undefined,
-    (prefersDark: boolean) => {
-      setIsDark(prefersDark);
-    }
-  );
+  // const systemPrefersDark: boolean = useMediaQuery(
+  //   {
+  //     query: "(prefers-color-scheme: dark)",
+  //   },
+  //   undefined,
+  //   (prefersDark: boolean) => {
+  //     setIsDark(prefersDark);
+  //   }
+  // );
 
-  const [isDark, setIsDark] = useState<boolean>(false);
-  console.log("isDark", isDark);
+  function isNight() {
+    const time: Date = new Date();
+    if (time.getHours() > 18) {
+      return true;
+    } else return false;
+  }
+
+  console.log("isNight", isNight());
+
+  const [isDark, setIsDark] = useState<boolean>(isNight());
 
   useEffect(() => {
     if (isDark) {
@@ -42,7 +49,7 @@ export default function Navbar({}: Props): ReactElement {
           <Link href="/uji-hipotesis">Uji Hipotesis</Link>
         </li>
         <li>
-          <Link href="/hitung-besar-sampel">Besar Sampel</Link>
+          <Link href="/besar-sampel">Besar Sampel</Link>
         </li>
         <li>
           <Link href="/faq">FAQ</Link>
