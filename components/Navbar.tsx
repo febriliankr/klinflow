@@ -26,8 +26,6 @@ export default function Navbar({}: Props): ReactElement {
     } else return false;
   }
 
-  console.log("isNight", isNight());
-
   const [isDark, setIsDark] = useState<boolean>(isNight());
 
   useEffect(() => {
