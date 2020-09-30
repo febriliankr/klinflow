@@ -19,6 +19,7 @@ export default function Navbar({}: Props): ReactElement {
   //   }
   // );
 
+  const [renderToggle, setRenderToggle] = useState<boolean>(false);
   
 
   function isNight() {
@@ -26,16 +27,13 @@ export default function Navbar({}: Props): ReactElement {
     if (time.getHours() > 18 || time.getHours() < 6 ) {
       return true;
     } else return false;
+
   }
 
   const [isDark, setIsDark] = useState<boolean>(isNight());
 
-  if (process.browser) {
-    // Client-side-only code
-    setIsDark(isNight());
-  }
-
   useEffect(() => {
+    setRenderToggle(true);
     if (isDark) {
       document.documentElement.classList.add(DARK_CLASS);
     } else {
@@ -66,13 +64,15 @@ export default function Navbar({}: Props): ReactElement {
           <Link href="/tentang">Tentang</Link>
         </li>
         <li className="toggle__darkmode">
-          <Toggle
-            className="DarkToggle"
-            defaultChecked={isDark}
-            onChange={(event) => setIsDark(event.target.checked)}
-            icons={{ checked: "🌙", unchecked: "🔆" }}
-            aria-label="Dark mode"
-          />
+          {
+            renderToggle ? (<Toggle
+              className="DarkToggle"
+              defaultChecked={isDark}
+              onChange={(event) => setIsDark(event.target.checked)}
+              icons={{ checked: "🌙", unchecked: "🔆" }}
+              aria-label="Dark mode"
+            />) : (null)
+          }
         </li>
       </ul>
     </div>
