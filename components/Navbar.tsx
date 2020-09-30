@@ -19,6 +19,8 @@ export default function Navbar({}: Props): ReactElement {
   //   }
   // );
 
+  
+
   function isNight() {
     const time: Date = new Date();
     if (time.getHours() > 18 || time.getHours() < 6 ) {
@@ -27,6 +29,11 @@ export default function Navbar({}: Props): ReactElement {
   }
 
   const [isDark, setIsDark] = useState<boolean>(isNight());
+
+  if (process.browser) {
+    // Client-side-only code
+    setIsDark(isNight());
+  }
 
   useEffect(() => {
     if (isDark) {
