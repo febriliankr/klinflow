@@ -23,6 +23,10 @@ html {
   p {
     color: $paragraph;
   }
+
+  ul {
+    color: $paragraph;
+  }
 }
 
 html.dark {
@@ -37,6 +41,10 @@ html.dark {
   }
 
   p {
+    color: $paragraph-darkmode;
+  }
+
+  ul {
     color: $paragraph-darkmode;
   }
 }

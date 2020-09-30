@@ -19,19 +19,26 @@
   p {
     line-height: 27px;
     font-size: 18px;
-    ul {
-      margin-top: 10px;
-      margin-left: 24px;
-      list-style: none;
-      li::before {
-        content: "\203A";
-        font-size: 23px;
-        color: $pink;
-        font-weight: 800;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-      }
+  }
+
+  ul {
+    line-height: 27px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 24px;
+    list-style: none;
+
+    li{
+      margin-top: 6px;
+    }
+    li::before {
+      content: "\203A";
+      font-size: 23px;
+      color: $pink;
+      font-weight: 800;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
     }
   }
 

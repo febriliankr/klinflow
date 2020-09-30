@@ -5,3 +5,5 @@ I changed the tech stack to Next.js because of its Server-Side Rendering Feature
 ## Trying tech
 
 https://github.com/splitbee/react-notion
+
+git commit -m "netlify.toml added and next.config.ts"

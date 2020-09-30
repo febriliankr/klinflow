@@ -30,21 +30,21 @@ export default function tentang() {
         lebih baik, kami berniat untuk terus mengembangkan{" "}
         <Link href="/">Risetku</Link> menjadi lebih baik lagi. Kami terus
         melakukan pengembangan-pengembangan seperti:
-        <ul className="inside__paragraph">
-          <li>
-            panduan lengkap tentang apa yang harus dilakukan setelah mengetahui
-            uji hipotesis atau rumus besar sampel,
-          </li>
-          <li>
-            memperkaya konten{" "}
-            <Link href="/faq">FAQ (frequently asked questions)</Link>,
-          </li>
-          <li>
-            mendesain ulang website untuk meningkatkan pengalaman pengguna, dan
-          </li>
-          <li>mengurus klaim hak kekayaan intelektual (HAKI).</li>
-        </ul>
       </p>
+      <ul className="inside__paragraph">
+        <li>
+          panduan lengkap tentang apa yang harus dilakukan setelah mengetahui
+          uji hipotesis atau rumus besar sampel,
+        </li>
+        <li>
+          memperkaya konten{" "}
+          <Link href="/faq">FAQ (frequently asked questions)</Link>,
+        </li>
+        <li>
+          mendesain ulang website untuk meningkatkan pengalaman pengguna, dan
+        </li>
+        <li>mengurus klaim hak kekayaan intelektual (HAKI).</li>
+      </ul>
     </div>
   );
 }
