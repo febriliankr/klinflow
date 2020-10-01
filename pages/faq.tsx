@@ -14,6 +14,20 @@ export default function FaQ() {
         </div>
       </div>
       <div className="uji-hipotesis__container">
+      <h2 className="question-heading">Daftar Pertanyaan 📃</h2>
+      <ul className="inside__paragraph">
+        <li><Link href="/faq/#q1"> Apa itu Variabel Bebas dan Variabel Terikat? </Link></li>
+        <li><Link href="/faq/#q2">Apa perbedaan Variabel Kategorik dan Variabel Numerik? </Link></li>
+        <li><Link href="/faq/#q3">Apa perbedaan Variabel Kategorik Dikotom vs Polikotom? </Link></li>
+        <li><Link href="/faq/#q4">Apa perbedaan Variabel Berpasangan dengan Tidak Berpasangan? </Link></li>
+        <li><Link href="/faq/#q5">Apa perbedaan Data Berdistribusi Normal dan Tidak Normal? </Link></li>
+      </ul>
+      
+      <a name="q1"></a>
+      <br/>
+      <br/>
+      <br/>
+        
         <h2 className="question-heading">
           Apa itu Variabel Bebas dan Variabel Terikat? 🔗
         </h2>
@@ -34,6 +48,14 @@ export default function FaQ() {
         </p>
         <img src="diagramvbvt.jpg" alt="bvt" />
 
+        <a name="q2"></a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+
         <h2 className="question-heading">
           Apa perbedaan Variabel Kategorik dan Variabel Numerik? 🔢
         </h2>
@@ -47,6 +69,12 @@ export default function FaQ() {
           Hati-hati dalam membedakan variabel kategorik ordinal dengan variabel
           numerik! Beberapa orang keliru dalam membedakannya.
         </p>
+        <a name="q3"></a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
 
         <h2 className="question-heading">
           Apa perbedaan Variabel Kategorik Dikotom vs Polikotom? 🤼
@@ -58,8 +86,15 @@ export default function FaQ() {
           terdiri atas lebih dari dua kelompok disebut sebagai variabel
           polikotom.
         </p>
+
+        <a name="q4"></a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <h2 className="question-heading">
-          Apa perbedaan Berpasangan dengan Tidak Berpasangan? 👫
+          Apa perbedaan Variabel Berpasangan dengan Tidak Berpasangan? 👫
         </h2>
         <p>
           Suatu variabel dikatakan berpasangan apabila seluruh set data variabel
@@ -67,6 +102,14 @@ export default function FaQ() {
           suatu variabel dikatakan tidak berpasangan apabila seluruh set data
           variabel tersebut didapatkan dari objek penelitian yang berbeda.
         </p>
+
+        <a name="q5"></a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        
         <h2 className="question-heading">
           Apa perbedaan Data Berdistribusi Normal dan Tidak Normal? 📅
         </h2>
@@ -80,7 +123,6 @@ export default function FaQ() {
           data numeriknya terdistribusi normal atau tidak karena hal ini akan
           memengaruhi uji hipotesis yang akan digunakan.
         </p>
-
         <img src="distribusi-normal.jpg" alt="distribusi normal" />
         <p>
           Data numerik memiliki karakteristik tertentu bila didistribusikan
@@ -93,6 +135,14 @@ export default function FaQ() {
           memengaruhi uji hipotesis yang akan digunakan.
         </p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <a name="referensi"></a>
         <h2 className="question-heading">Referensi 📜</h2>
         <ul className="inside__paragraph">
           <li>

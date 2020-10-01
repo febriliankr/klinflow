@@ -18,10 +18,10 @@ export default function Home() {
         </h2>
         <div className="home__buttons">
           <Link href="uji-hipotesis">
-            <a className="button">Uji Hipotesis</a>
+            <a className="button">🧰 Uji Hipotesis</a>
           </Link>
           <Link href="/besar-sampel">
-            <a className="button">Besar Sampel</a>
+            <a className="button">🧮 Besar Sampel</a>
           </Link>
         </div>
         <Link href="/konsultasi">

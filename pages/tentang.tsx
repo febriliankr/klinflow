@@ -45,6 +45,21 @@ export default function tentang() {
         </li>
         <li>mengurus klaim hak kekayaan intelektual (HAKI).</li>
       </ul>
+
+      <h1>Donasi 💸</h1>
+      <p>
+        Jika Anda merasa terbantu dengan aplikasi ini atau ingin mendukung pengembangan dari Risetku.com, kami membuka diri untuk berbagai bentuk donasi Anda. Donasi dapat disumbangkan melalui:
+      </p>
+      <p className="tabbed__donation">
+      <a href="https://www.patreon.com/risetku">patreon.com/risetku </a> 
+      </p>
+      <p>Donasi akan digunakan untuk:</p>
+      <ul>
+      <li>
+          biaya server dan domain risetku
+        </li>
+        <li>pengembangan fitur-fitur terbaru.</li>
+      </ul>
     </div>
   );
 }
