@@ -7,3 +7,20 @@ I changed the tech stack to Next.js because of its Server-Side Rendering Feature
 https://github.com/splitbee/react-notion
 
 git commit -m "netlify.toml added and next.config.ts"
+
+## Compnents
+
+### Added <WikiPopup/> Component
+
+The WikiPopup component accepts `children`, `qnumber`, and `shortAnswer` as props.
+
+the qnumber props will be rendered as link for "Pelajari lebih lanjut". This is how the Link will be rendered. So do not include `/faq#` as the link, only input the anchor tag.
+```
+href={`/faq#q${qNumber}`}>
+```
+
+The short answer is will take a markdown format. It uses react-markdown to generate from the shortAnswer props.
+
+### Added active navbar indicator according to current page
+
+the variable is currentLocation, named after LANY's song, listen [here](https://www.youtube.com/watch?v=_PUTnwz3YSU).

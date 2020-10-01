@@ -5,12 +5,13 @@ $paragraph: #455370;
 $paragraph-darkmode: #aacfe2;
 @import "./components/react-toggle.scss";
 @import "./components/navbar.scss";
-@import "./svg//svg.scss";
+@import "./svg/svg.scss";
 @import "./components/button.scss";
 @import "./pages/home.scss";
 @import "./pages/about.scss";
 @import "./pages/uji-hipotesis.scss";
 @import "./components/footer.scss";
+@import "./components/wiki-popup.scss";
 
 * {
   margin: 0;
@@ -33,6 +34,9 @@ html {
 html.dark {
   color: $light;
   background-color: $dark;
+  .popup__layer{
+    background-color: #1a364e7e;
+  }
   a {
     color: rgb(213, 234, 255);
     text-decoration: none;

@@ -2,32 +2,23 @@ import React, { ReactElement } from "react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Toggle from "react-toggle";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
-const DARK_CLASS: string = "dark";
+import { useRouter } from "next/router";
 
 interface Props {}
 
 export default function Navbar({}: Props): ReactElement {
-  // const systemPrefersDark: boolean = useMediaQuery(
-  //   {
-  //     query: "(prefers-color-scheme: dark)",
-  //   },
-  //   undefined,
-  //   (prefersDark: boolean) => {
-  //     setIsDark(prefersDark);
-  //   }
-  // );
+  const DARK_CLASS: string = "dark";
+  const currentLocation = useRouter().pathname;
 
   const [renderToggle, setRenderToggle] = useState<boolean>(false);
-  
 
   function isNight() {
     const time: Date = new Date();
-    if (time.getHours() > 18 || time.getHours() < 6 ) {
+    if (time.getHours() > 18 || time.getHours() < 6) {
       return true;
     } else return false;
-
   }
 
   const [isDark, setIsDark] = useState<boolean>(isNight());
@@ -48,31 +39,31 @@ export default function Navbar({}: Props): ReactElement {
       </Link>
 
       <ul className="navigation__menu">
-        <li>
+        <li className={currentLocation === "/uji-hipotesis" ? "active" : null}>
           <Link href="/uji-hipotesis">Uji Hipotesis</Link>
         </li>
-        <li>
+        <li className={currentLocation === "/besar-sampel" ? "active" : null}>
           <Link href="/besar-sampel">Besar Sampel</Link>
         </li>
-        <li>
+        <li className={currentLocation === "/faq" ? "active" : null}>
           <Link href="/faq">FAQ</Link>
         </li>
-        <li>
+        <li className={currentLocation === "/konsultasi" ? "active" : null}>
           <Link href="/konsultasi">Konsultasi</Link>
         </li>
-        <li>
+        <li className={currentLocation === "/tentang" ? "active" : null}>
           <Link href="/tentang">Tentang</Link>
         </li>
         <li className="toggle__darkmode">
-          {
-            renderToggle ? (<Toggle
+          {renderToggle ? (
+            <Toggle
               className="DarkToggle"
               defaultChecked={isDark}
               onChange={(event) => setIsDark(event.target.checked)}
               icons={{ checked: "🌙", unchecked: "🔆" }}
               aria-label="Dark mode"
-            />) : (null)
-          }
+            />
+          ) : null}
         </li>
       </ul>
     </div>

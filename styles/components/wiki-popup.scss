@@ -1,0 +1,33 @@
+.apaini__container{
+    font-size: 14px;
+    width: 400px;
+    max-width: 550px;
+    padding: 20px;
+    p {
+        margin-bottom: 10px;
+    }
+    a::after{
+        content: "→";
+        margin-left: 4px;
+    }
+}
+
+.popup__layer{
+    backdrop-filter: blur(10px);
+    
+    
+    border-radius: 5px;
+    background: #fdfdfd !important;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.10);
+}
+
+a.link-apaini{
+    cursor: pointer;
+    
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    background-color: #cccccc2a;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+  }

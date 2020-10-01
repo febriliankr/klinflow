@@ -29,9 +29,15 @@
 
     flex: end;
     li {
-      font-weight: 600;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
       margin-right: 30px;
       text-decoration: none;
+    }
+
+    li.active{
+      box-shadow: inset 0px -4px 0px 0 #93c2db60;
     }
   }
 }

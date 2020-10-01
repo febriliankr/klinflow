@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { FaSpotify } from "react-icons/fa";
 import { CgMediaPodcast } from "react-icons/cg";
+import { ToggleLayer, Transition } from "react-laag";
+import WikiPopup from "../components/WikiPopup";
 
 export default function FaQ() {
   return (
@@ -14,20 +16,40 @@ export default function FaQ() {
         </div>
       </div>
       <div className="uji-hipotesis__container">
-      <h2 className="question-heading">Daftar Pertanyaan 📃</h2>
-      <ul className="inside__paragraph">
-        <li><Link href="/faq/#q1"> Apa itu Variabel Bebas dan Variabel Terikat? </Link></li>
-        <li><Link href="/faq/#q2">Apa perbedaan Variabel Kategorik dan Variabel Numerik? </Link></li>
-        <li><Link href="/faq/#q3">Apa perbedaan Variabel Kategorik Dikotom vs Polikotom? </Link></li>
-        <li><Link href="/faq/#q4">Apa perbedaan Variabel Berpasangan dengan Tidak Berpasangan? </Link></li>
-        <li><Link href="/faq/#q5">Apa perbedaan Data Berdistribusi Normal dan Tidak Normal? </Link></li>
-      </ul>
-      
-      <a name="q1"></a>
-      <br/>
-      <br/>
-      <br/>
-        
+        <h2 className="question-heading">Daftar Pertanyaan 📃</h2>
+        <ul className="inside__paragraph">
+          <li>
+            <Link href="/faq/#q1">
+              <a>Apa itu Variabel Bebas dan Variabel Terikat?</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/faq/#q2">
+              <a>Apa perbedaan Variabel Kategorik dan Variabel Numerik?</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/faq/#q3">
+              <a>Apa perbedaan Variabel Kategorik Dikotom vs Polikotom?</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/faq/#q4">
+              <a>
+                Apa perbedaan Variabel Berpasangan dengan Tidak Berpasangan?
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/faq/#q5">
+              <a>Apa perbedaan Data Berdistribusi Normal dan Tidak Normal?</a>
+            </Link>
+          </li>
+        </ul>
+        <a name="q1"></a>
+        <br />
+        <br />
+        <br />
         <h2 className="question-heading">
           Apa itu Variabel Bebas dan Variabel Terikat? 🔗
         </h2>
@@ -47,15 +69,11 @@ export default function FaQ() {
           <a>Lihat juga: Dikotom vs Polikotom.</a>
         </p>
         <img src="diagramvbvt.jpg" alt="bvt" />
-
         <a name="q2"></a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-
-
+        <br />
+        <br />
+        <br />
+        <br />
         <h2 className="question-heading">
           Apa perbedaan Variabel Kategorik dan Variabel Numerik? 🔢
         </h2>
@@ -70,12 +88,10 @@ export default function FaQ() {
           numerik! Beberapa orang keliru dalam membedakannya.
         </p>
         <a name="q3"></a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-
+        <br />
+        <br />
+        <br />
+        <br />
         <h2 className="question-heading">
           Apa perbedaan Variabel Kategorik Dikotom vs Polikotom? 🤼
         </h2>
@@ -86,13 +102,11 @@ export default function FaQ() {
           terdiri atas lebih dari dua kelompok disebut sebagai variabel
           polikotom.
         </p>
-
         <a name="q4"></a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        <br />
+        <br />
+        <br />
+        <br />
         <h2 className="question-heading">
           Apa perbedaan Variabel Berpasangan dengan Tidak Berpasangan? 👫
         </h2>
@@ -102,14 +116,11 @@ export default function FaQ() {
           suatu variabel dikatakan tidak berpasangan apabila seluruh set data
           variabel tersebut didapatkan dari objek penelitian yang berbeda.
         </p>
-
         <a name="q5"></a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        
+        <br />
+        <br />
+        <br />
+        <br />
         <h2 className="question-heading">
           Apa perbedaan Data Berdistribusi Normal dan Tidak Normal? 📅
         </h2>
@@ -134,14 +145,17 @@ export default function FaQ() {
           data numeriknya terdistribusi normal atau tidak karena hal ini akan
           memengaruhi uji hipotesis yang akan digunakan.
         </p>
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        <br />
+        <WikiPopup
+            shortAnswer="Bila hasil uji statsitik normalitas >0,05, maka data dikatakan normal.  Uji statsitik yang umum digunakan, yakni  **Uji Kolmogorov Smirnov** (data lebih dari 50) atau **Uji Shapiro Wilk** (data kurang dari 50)."
+            qNumber="5"
+          >
+            Apa ini?
+          </WikiPopup>
+        <br />
+        <br />
+        <br />
+        <br />
         <a name="referensi"></a>
         <h2 className="question-heading">Referensi 📜</h2>
         <ul className="inside__paragraph">
@@ -175,6 +189,9 @@ export default function FaQ() {
             Jakarta: Epidemiologi Indonesia; 2015.{" "}
           </li>
         </ul>
+
+        <div>
+        </div>
       </div>
     </>
   );
