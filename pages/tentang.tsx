@@ -51,7 +51,7 @@ export default function tentang() {
         Jika Anda merasa terbantu dengan aplikasi ini atau ingin mendukung pengembangan dari Risetku.com, kami membuka diri untuk berbagai bentuk donasi Anda. Donasi dapat disumbangkan melalui:
       </p>
       <p className="tabbed__donation">
-      <a href="https://www.patreon.com/risetku">patreon.com/risetku </a> 
+      <a href="http://kitabisa.com/campaign/risetku">kitabisa.com/campaign/risetku</a> 
       </p>
       <p>Donasi akan digunakan untuk:</p>
       <ul>

@@ -46,7 +46,7 @@ export default function FaQ() {
             </Link>
           </li>
         </ul>
-        <a name="q1"></a>
+        <a id="q1"></a>
         <br />
         <br />
         <br />
@@ -69,7 +69,7 @@ export default function FaQ() {
           <a>Lihat juga: Dikotom vs Polikotom.</a>
         </p>
         <img src="diagramvbvt.jpg" alt="bvt" />
-        <a name="q2"></a>
+        <a id="q2"></a>
         <br />
         <br />
         <br />
@@ -87,7 +87,7 @@ export default function FaQ() {
           Hati-hati dalam membedakan variabel kategorik ordinal dengan variabel
           numerik! Beberapa orang keliru dalam membedakannya.
         </p>
-        <a name="q3"></a>
+        <a id="q3"></a>
         <br />
         <br />
         <br />
@@ -102,7 +102,7 @@ export default function FaQ() {
           terdiri atas lebih dari dua kelompok disebut sebagai variabel
           polikotom.
         </p>
-        <a name="q4"></a>
+        <a id="q4"></a>
         <br />
         <br />
         <br />
@@ -116,7 +116,7 @@ export default function FaQ() {
           suatu variabel dikatakan tidak berpasangan apabila seluruh set data
           variabel tersebut didapatkan dari objek penelitian yang berbeda.
         </p>
-        <a name="q5"></a>
+        <a id="q5"></a>
         <br />
         <br />
         <br />
@@ -156,7 +156,7 @@ export default function FaQ() {
         <br />
         <br />
         <br />
-        <a name="referensi"></a>
+        <a id="referensi"></a>
         <h2 className="question-heading">Referensi 📜</h2>
         <ul className="inside__paragraph">
           <li>
