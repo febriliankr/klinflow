@@ -1,8 +1,12 @@
-$light: #fdfdfd;
-$dark: #1a364e;
-$pink: rgb(255, 117, 140);
-$paragraph: #455370;
-$paragraph-darkmode: #aacfe2;
+$light: #ffffff;
+$light-grey: #F8F8F8;
+$dark: #181c3d;
+$dark-darker: #1c2042;
+$blue-darker: #0164ee;
+$blue: #0069ff;
+$paragraph: #4f505e;
+$paragraph-darkmode: #e9e9e9;
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
 @import "./components/react-toggle.scss";
 @import "./components/navbar.scss";
 @import "./svg/svg.scss";
@@ -10,13 +14,15 @@ $paragraph-darkmode: #aacfe2;
 @import "./pages/home.scss";
 @import "./pages/about.scss";
 @import "./pages/uji-hipotesis.scss";
+@import "./pages/register.scss";
 @import "./components/footer.scss";
 @import "./components/wiki-popup.scss";
+@import "./components/form.scss";
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -41,7 +47,15 @@ html.dark {
     color: rgb(213, 234, 255);
     text-decoration: none;
     &:hover {
-      color: $pink;
+      color: white;
+    }
+  }
+
+  a.button-light{
+    color: #fff;
+    background-color: rgba(193, 207, 255, 0.123);
+    &:hover{
+      background-color: #006affa6;
     }
   }
 
@@ -52,12 +66,26 @@ html.dark {
   ul {
     color: $paragraph-darkmode;
   }
+
+  input {
+    background-color: $dark-darker;
+    color: $paragraph-darkmode;
+  }
 }
 
 a {
   color: rgb(0, 62, 124);
   text-decoration: none;
   &:hover {
-    color: rgb(255, 97, 163);
+    color: rgb(103, 179, 255);
   }
+}
+
+// MARGINS
+
+.mt-1{
+  margin-top: 15px;
+}
+.mt-2{
+margin-top: 30px;
 }

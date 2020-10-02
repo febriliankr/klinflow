@@ -21,7 +21,7 @@ export default function Navbar({}: Props): ReactElement {
     } else return false;
   }
 
-  const [isDark, setIsDark] = useState<boolean>(isNight());
+  const [isDark, setIsDark] = useState<boolean>(false);
 
   useEffect(() => {
     setRenderToggle(true);
@@ -35,24 +35,19 @@ export default function Navbar({}: Props): ReactElement {
   return (
     <div className="navbar__container">
       <Link href="/">
-        <div className="navbar__logo">RISETKU</div>
+        <div className="navbar__logo">Klinflow</div>
       </Link>
 
       <ul className="navigation__menu">
-        <li className={currentLocation === "/uji-hipotesis" ? "active" : null}>
-          <Link href="/uji-hipotesis">Uji Hipotesis</Link>
+        <li>
+          <Link href="/login">
+            <a className="button-light">Login</a>
+          </Link>
         </li>
-        <li className={currentLocation === "/besar-sampel" ? "active" : null}>
-          <Link href="/besar-sampel">Besar Sampel</Link>
-        </li>
-        <li className={currentLocation === "/faq" ? "active" : null}>
-          <Link href="/faq">FAQ</Link>
-        </li>
-        <li className={currentLocation === "/konsultasi" ? "active" : null}>
-          <Link href="/konsultasi">Konsultasi</Link>
-        </li>
-        <li className={currentLocation === "/tentang" ? "active" : null}>
-          <Link href="/tentang">Tentang</Link>
+        <li>
+          <Link href="/register">
+            <a className="button-light">Daftar Gratis</a>
+          </Link>
         </li>
         <li className="toggle__darkmode">
           {renderToggle ? (

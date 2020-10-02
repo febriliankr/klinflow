@@ -8,28 +8,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Welcome | Risetku.com</title>
+        <title>Welcome | Klinflow</title>
       </Head>
       <div className="home__container">
-        <h1>Aplikasi untuk memudahkan analisis penelitian Anda</h1>
-        <h2>
-          Hitung besar sampel, tentukan jenis uji hipotesis, dan konsultasi
-          mengenai penelitian anda.
-        </h2>
-        <div className="home__buttons">
-          <Link href="uji-hipotesis">
-            <a className="button">🧰 Uji Hipotesis</a>
-          </Link>
-          <Link href="/besar-sampel">
-            <a className="button">🧮 Besar Sampel</a>
-          </Link>
+        <div className="hero__container">
+          <h1>Temukan shift klinik atau rumah sakit terbaik untuk Anda</h1>
+          <h2>
+            Klinflow membantu anda menemukan klinik atau rumah sakit yang cocok
+            baik dari segi lokasi, shift, budaya, gaji, dan lain-lain.
+          </h2>
+          <div className="home__buttons">
+            <a className="button">Daftar Gratis</a>
+          </div>
         </div>
-        <Link href="/konsultasi">
-          <a className="home__ask">Saya belum tahu apa yang harus dilakukan</a>
-        </Link>
+        <div className="image__container">
+          <img src="/klinik.png" alt="klinik" />
+        </div>
       </div>
-
-      <Tentang/>
     </>
   );
 }

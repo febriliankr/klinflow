@@ -1,4 +1,5 @@
 .navbar__container {
+  padding-top: 30px;
   background: rgba(22, 22, 22, 0);
   // backdrop-filter: blur(5px);
   // border-bottom: 0px solid rgba(255, 255, 255, 0.1);
@@ -12,8 +13,9 @@
   z-index: 10;
 
   .navbar__logo {
-    margin-left: 30px;
+    margin-left: 100px;
     cursor: pointer;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
     font-weight: 700;
@@ -30,8 +32,8 @@
     flex: end;
     li {
       font-size: 1rem;
-      font-weight: 700;
-      text-transform: uppercase;
+      // font-weight: 700;
+      // text-transform: uppercase;
       margin-right: 30px;
       text-decoration: none;
     }

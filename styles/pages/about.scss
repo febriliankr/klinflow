@@ -33,7 +33,7 @@
     li::before {
       content: "\203A";
       font-size: 23px;
-      color: $pink;
+      color: $blue-darker;
       font-weight: 800;
       display: inline-block;
       width: 1em;
@@ -55,7 +55,7 @@
     // font-size: 23px;
     font-weight: 500;
     padding-left: 20px;
-    border-left: 2px solid $pink;
+    border-left: 2px solid $blue-darker;
     display: inline-block;
     
     
