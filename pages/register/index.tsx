@@ -87,7 +87,7 @@ function ExampleHookForm() {
                 <p className="error-label">{errors.whatsapp?.message}</p>
 
                   
-                  <a className="button-light mt-1" onClick={handleSubmit}>Register</a>
+                  <a className="button-light mt-1" onClick={handleSubmit(onSubmit)}>Register</a>
                   
               </form>
             </div>

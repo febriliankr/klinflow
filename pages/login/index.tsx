@@ -56,7 +56,7 @@ function ExampleHookForm() {
                   placeholder="Password"
                   ref={register}
                 />
-                <a className="button-light mt-1" onClick={handleSubmit}>
+                <a className="button-light mt-1" onClick={handleSubmit(onSubmit)}>
                   Login
                 </a>
               </form>

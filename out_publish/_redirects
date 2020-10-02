@@ -1,2 +1,3 @@
 # Next-on-Netlify Redirects
-/api/hello  /.netlify/functions/next_api_hello  200
+/api/besar-sampel-data  /.netlify/functions/next_api_besarsampeldata  200
+/api/uji-hipotesis-data  /.netlify/functions/next_api_ujihipotesisdata  200
