@@ -18,7 +18,7 @@ export default function Home() {
             baik dari segi lokasi, shift, budaya, gaji, dan lain-lain.
           </h2>
           <div className="home__buttons">
-            <a className="button">Daftar Gratis</a>
+            <Link href="/register"><a className="button">Daftar Gratis</a></Link>
           </div>
         </div>
         <div className="image__container">
