@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </div>
         <div className="image__container">
-          <img src="/klinik.png" alt="klinik" />
+          <img src="/klinik.webp" alt="klinik" />
         </div>
       </div>
     </>
