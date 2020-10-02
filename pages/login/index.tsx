@@ -6,10 +6,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 const Schema = yup.object().shape({
-  name: yup.string().required().min(3),
   email: yup.string().required().email(),
-  instansi: yup.string().required().min(2),
-  whatsapp: yup.number().required().min(6),
 });
 
 function ExampleHookForm() {
